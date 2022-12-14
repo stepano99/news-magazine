@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  * {
+    box-sizing: border-box;
+  }
+  html, body {
+    @apply bg-[#dbd4d4] text-black m-0 p-0 h-full;
+  }
+
+  h4{
+    @apply text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-black;
+  }
+  h1{
+    @apply text-3xl font-mono text-gray-800 capitalize lg:text-4xl dark:text-black;
+  }
+}
+
+@layer components {
+  .navbar-color {
+    @apply  bg-gray-900 cursor-pointer text-sm font-light text-[#e5e5e5]  hover:text-[#b3b3b3];
+  }
+  
+  .input{
+    @apply w-full rounded bg-[#333333] px-5 py-3.5 placeholder-[gray] outline-none focus:bg-[#454545]
+  }
+  .modalButton {
+    @apply flex h-11 w-11 items-center justify-center rounded-full border-2 border-[gray] bg-[#2a2a2a]/60 transition hover:border-white hover:bg-white/10;
+  }
+}
+
+.activeMenu{
+  font-weight: bold;
+  /* border-top: 2px #dfd9d980 solid !important; */
+  border-radius: 0 !important;
+  /*background-color: aqua;*/
+  color: aquamarine;
+}
+.page-container{
+  min-height: 100vh;
+  position: relative;
+}
